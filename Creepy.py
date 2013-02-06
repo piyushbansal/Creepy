@@ -106,10 +106,10 @@ if __name__ == "__main__":
 		repository=crawler.crawl()
 		print repository
 	except KeyboardInterrupt:
-		Logger.error("Stopping (KeyboardInterrupt)")
+		Logger.error("Stopping due to KeyboardInterrupt")
 		sys.exit()
 	except Exception, e:
-		Logger.error("EXCEPTION: %s " % e)
+		Logger.error("generic Exception: %s " % e)
 
 				
 
