@@ -19,7 +19,7 @@ $ python Creepy.py {URL name} {Number of links}
 example:
 
 $ python Creepy.py http://www.google.com 12
-# Do checkout logging.log in case you want to read logs.
+###### Do checkout logging.log in case you want to read logs.
 
 
 Output:
