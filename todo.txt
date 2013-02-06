@@ -1,0 +1,2 @@
+1. Make a database at the backend to support more crawling.
+2. Embed in a notion of depth, rather than maximum number of links to be crawled.
