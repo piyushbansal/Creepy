@@ -2,6 +2,7 @@ Creepy
 ======
 
 A python based Web Crawler, simple and sexy :D
+
 Has a logger where error,info and warning logs are stored.
 
 Dependencies
