@@ -1,5 +1,5 @@
 import sys, urlparse, urllib2,robotparser,httplib,logging
-from bs4 import BeautifulSoup
+from BeautifulSoup import BeautifulSoup
 
 
 ''' Setup Logger'''
@@ -104,7 +104,8 @@ if __name__ == "__main__":
 		crawler.processinput()
 		crawler.initqueue()
 		repository=crawler.crawl()
-		print repository
+		for links in Repository:
+			print links
 	except KeyboardInterrupt:
 		Logger.error("Stopping due to KeyboardInterrupt")
 		sys.exit()
