@@ -25,4 +25,5 @@ $ python Creepy.py http://www.google.com 2
 Output:
 
 http://www.google.co.in/imghp?hl=en&tab=wi
+
 http://maps.google.co.in/maps?hl=en&tab=wl
