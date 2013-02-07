@@ -66,7 +66,7 @@ class Creepy:
 			''' Basic try except block for error handling '''
 
 			try: 
-				response = urllib2.urlopen(request)
+				response = urllib2.urlopen(request,None,2.5)
 			except urllib2.HTTPError, e:
 				Logger.error('HTTPError = ' + str(e.code))
 				Logger.info('chances are that you typed the URL wrong')
@@ -90,7 +90,7 @@ class Creepy:
 
 					if valid_url and (valid_url.find('http')==0 or valid_url.find('https')==0) and valid_url not in self.repository:
 							self.repository.append(valid_url)
-							if(len(self.repository)>self.url_number):
+							if(len(self.repository)>=self.url_number):
 								return self.repository
 							else:
 								self.queue.append(valid_url)
@@ -104,7 +104,8 @@ if __name__ == "__main__":
 		crawler.processinput()
 		crawler.initqueue()
 		repository=crawler.crawl()
-		print repository
+		for links in repository:
+			print links
 	except KeyboardInterrupt:
 		Logger.error("Stopping due to KeyboardInterrupt")
 		sys.exit()
