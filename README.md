@@ -3,6 +3,8 @@ Creepy
 
 A python based Web Crawler, simple and sexy :D
 
+Has a logger where error,info and warning logs are stored.
+
 Dependencies
 ------------
 
@@ -17,6 +19,8 @@ $ python Creepy.py {URL name} {Number of links}
 example:
 
 $ python Creepy.py http://www.google.com 12
+###### Do checkout logging.log in case you want to read logs.
+
 
 Output:
 
